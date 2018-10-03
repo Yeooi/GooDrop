@@ -30,9 +30,11 @@ public class GooDrop extends Goo { // B
 		{
 			if(drop.CheckCollision(multiDrops))
 			{
-				drop.red = (int) (Math.random() * 255);
-				drop.green = (int) (Math.random() * 255);
-				drop.blue = (int) (Math.random() * 255);
+				drop.red = 255;
+			}
+			else
+			{
+				drop.red = 0;
 			}
 			drop.move(getWidth(), getHeight());
 			drop.draw(g);

@@ -41,11 +41,9 @@ public class SimpleDrop {
 			{
 				if(this!=simpleDrops[j])
 				{
-					if ( Math.sqrt( ( simpleDrops[j].xpos-this.xpos ) 
-					* ( simpleDrops[j].xpos-this.xpos )  
-					+ ( simpleDrops[j].ypos-this.ypos ) 
-					* ( simpleDrops[j].ypos-this.ypos ) ) 
-					< ( this.size + simpleDrops[j].size ) ) 
+					if ( Math.sqrt( (( simpleDrops[j].xpos-this.xpos ) * ( simpleDrops[j].xpos-this.xpos )) 
+					+ (( simpleDrops[j].ypos-this.ypos ) * ( simpleDrops[j].ypos-this.ypos )) ) 
+					<= ( this.size + simpleDrops[j].size ) ) 
 					{
 						return true;
 					}
